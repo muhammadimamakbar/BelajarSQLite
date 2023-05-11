@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/product_name"
+            android:text="Nama Produk"
+            android:textColor="@color/colorBlack"
+            android:textSize="12dp"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_product"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:contentDescription="Contoh Android SQLite"
+            android:src="@drawable/pedit"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/delete_product"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="Contoh Android SQLite"
+            android:src="@drawable/pdelete"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
